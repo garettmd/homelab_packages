@@ -1,0 +1,9 @@
+---
+# vars file for packages
+packages:
+  - avahi-daemon
+  - nfs-common
+  - screen
+  - unattended-upgrades
+  - tree
+  - open-iscsi

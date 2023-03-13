@@ -1,0 +1,12 @@
+---
+# tasks file for packages
+- name: Install packages
+  ansible.builtin.apt:
+    name: "{{ item }}"
+    state: present
+  loop: "{{ packages }}"
+- name: enable iscsi
+  ansible.builtin.service:
+    name: open-iscsi
+    state: started
+    enabled: true
